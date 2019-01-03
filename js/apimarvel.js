@@ -24,7 +24,7 @@ let marvel ={
                 // data.data.results.forEach(datos =>{
                 //     console.log(datos.name);});
                     html += `<div class='col-md-3'>
-                    <img src="${datos.thumbnail.path}/portrait_fantastic.${datos.thumbnail.extension}"/>
+                    <a href="${datos.urls[0].url}" target='_blank'> <img src="${datos.thumbnail.path}/portrait_fantastic.${datos.thumbnail.extension}"/> </a>
                    <h3> ${datos.name} </h3>  </div>`;
 
                     if ((i+1) % 4 == 0) {
